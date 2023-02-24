@@ -442,6 +442,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - LifeWasEasyBackThen
   - Music
   BanksToLoad: []
   LiveUpdatePort: 9264

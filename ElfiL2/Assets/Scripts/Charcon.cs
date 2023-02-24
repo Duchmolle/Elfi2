@@ -19,7 +19,7 @@ public class Charcon : MonoBehaviour
         tr = transform;
         rb = GetComponent<Rigidbody>();
         groundPosition = tr.position;
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

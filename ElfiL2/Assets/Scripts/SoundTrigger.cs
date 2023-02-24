@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD;
+using FMODUnity;
 
 public class SoundTrigger : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class SoundTrigger : MonoBehaviour
     bool playerIn;
     [SerializeField] Animator animator;
     [SerializeField] float soundWaveRadius;
+    [SerializeField] string eventToPlayAfterActivation;
 
     private void Start()
     {
@@ -56,9 +59,13 @@ public class SoundTrigger : MonoBehaviour
     {
         if(playerIn)
         {
-
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                GetComponent<StudioEventEmitter>().Stop();
+                FMOD.Studio.EventInstance eventInstance = FMODUnity.RuntimeManager.CreateInstance(EventReference.Find(eventToPlayAfterActivation));
+                RuntimeManager.AttachInstanceToGameObject(eventInstance, transform);
+                eventInstance.start();
+
                 if (isLastTrigger && lvlManager.LvlCompletion == 1)
                 {
                     lvlManager.LvlFinished();

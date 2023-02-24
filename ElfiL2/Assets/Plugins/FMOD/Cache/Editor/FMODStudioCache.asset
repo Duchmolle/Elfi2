@@ -14,20 +14,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/BackgroundMusic
   Guid:
-    Data1: -1635858178
-    Data2: 1224572945
-    Data3: 334488989
-    Data4: -1918342828
+    Data1: 1571990056
+    Data2: 1142016934
+    Data3: 399297927
+    Data4: 1852233786
   Banks:
-  - {fileID: -3685267773819108992}
+  - {fileID: 2934836833054292942}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 147722
---- !u!114 &-3685267773819108992
+  Length: 158798
+--- !u!114 &-4831877466666322971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BackgroundMusic 2
+  m_EditorClassIdentifier: 
+  Path: event:/BackgroundMusic 2
+  Guid:
+    Data1: 1780312736
+    Data2: 1334900326
+    Data3: 1010369669
+    Data4: -1528988827
+  Banks:
+  - {fileID: 2934836833054292942}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 238419
+--- !u!114 &-3422353621548409566
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,15 +64,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../../FMOD/Elfi2/ELFI2/Build/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638126090249649740
+  Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638128537310854333
   FileSizes: []
   Exists: 1
---- !u!114 &-3427416692853970968
+--- !u!114 &-167383998433862808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,15 +82,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/LifeWasEasyBackThen.bank
   m_EditorClassIdentifier: 
-  Path: ../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638126090220740481
-  FileSizes:
-  - Name: 
-    Value: 812
+  Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/LifeWasEasyBackThen.bank
+  Name: LifeWasEasyBackThen
+  StudioPath: bank:/LifeWasEasyBackThen
+  lastModified: 638128537310674293
+  FileSizes: []
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -78,19 +103,79 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -3427416692853970968}
-  - {fileID: 5926006020769307489}
-  - {fileID: -3685267773819108992}
+  - {fileID: 3097790152859513060}
+  - {fileID: -3422353621548409566}
+  - {fileID: 2934836833054292942}
+  - {fileID: -167383998433862808}
   EditorEvents:
   - {fileID: -4993324643231649309}
+  - {fileID: -4831877466666322971}
+  - {fileID: 2478752534017609788}
+  - {fileID: 270195705787993652}
+  - {fileID: 8755019821538864974}
+  - {fileID: 5462781737254966337}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5926006020769307489}
+  - {fileID: -3422353621548409566}
   StringsBanks:
-  - {fileID: -3427416692853970968}
-  cacheTime: 638126090249649740
+  - {fileID: 3097790152859513060}
+  cacheTime: 638128537311236485
   cacheVersion: 131601
---- !u!114 &5926006020769307489
+--- !u!114 &270195705787993652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Nostalgia_1
+  m_EditorClassIdentifier: 
+  Path: event:/Nostalgia_1
+  Guid:
+    Data1: -1272131362
+    Data2: 1121483774
+    Data3: 1797123483
+    Data4: -84939342
+  Banks:
+  - {fileID: -167383998433862808}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 78155
+--- !u!114 &2478752534017609788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GeneralBackgroundMusic
+  m_EditorClassIdentifier: 
+  Path: event:/GeneralBackgroundMusic
+  Guid:
+    Data1: -2000235181
+    Data2: 1181858655
+    Data3: -108707659
+    Data4: 1596784847
+  Banks:
+  - {fileID: 2934836833054292942}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 160052
+--- !u!114 &2934836833054292942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,11 +185,85 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Music.bank
   m_EditorClassIdentifier: 
-  Path: ../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638126090220730480
+  Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638128537311236485
   FileSizes: []
   Exists: 1
+--- !u!114 &3097790152859513060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638128537310864334
+  FileSizes:
+  - Name: 
+    Value: 1124
+  Exists: 1
+--- !u!114 &5462781737254966337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NavigationBip
+  m_EditorClassIdentifier: 
+  Path: event:/NavigationBip
+  Guid:
+    Data1: 729075193
+    Data2: 1300762703
+    Data3: -143616833
+    Data4: 693081750
+  Banks:
+  - {fileID: -3422353621548409566}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8755019821538864974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Nostalgia_2
+  m_EditorClassIdentifier: 
+  Path: event:/Nostalgia_2
+  Guid:
+    Data1: 1399967700
+    Data2: 1222958446
+    Data3: -791656040
+    Data4: -244737079
+  Banks:
+  - {fileID: -167383998433862808}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 255192
