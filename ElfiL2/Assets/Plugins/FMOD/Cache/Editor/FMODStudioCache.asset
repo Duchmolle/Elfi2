@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4993324643231649309
+--- !u!114 &-8382369361824303267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BackgroundMusic
+  m_Name: event:/Serenity_1
   m_EditorClassIdentifier: 
-  Path: event:/BackgroundMusic
+  Path: event:/Serenity_1
   Guid:
-    Data1: 1571990056
-    Data2: 1142016934
-    Data3: 399297927
-    Data4: 1852233786
+    Data1: -321491483
+    Data2: 1326212509
+    Data3: 984436894
+    Data4: -1658231287
   Banks:
-  - {fileID: 2934836833054292942}
+  - {fileID: 2831844537358545923}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 158798
---- !u!114 &-4831877466666322971
+  Length: 28583
+--- !u!114 &-4722530072177921909
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,23 +37,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BackgroundMusic 2
+  m_Name: event:/NavBip
   m_EditorClassIdentifier: 
-  Path: event:/BackgroundMusic 2
+  Path: event:/NavBip
   Guid:
-    Data1: 1780312736
-    Data2: 1334900326
-    Data3: 1010369669
-    Data4: -1528988827
+    Data1: -1573203876
+    Data2: 1238930313
+    Data3: -1413729393
+    Data4: 1765853850
   Banks:
-  - {fileID: 2934836833054292942}
-  IsStream: 1
+  - {fileID: -3422353621548409566}
+  IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 238419
+  Length: 2000
 --- !u!114 &-3422353621548409566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,25 +69,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638128537310854333
-  FileSizes: []
-  Exists: 1
---- !u!114 &-167383998433862808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/LifeWasEasyBackThen.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/LifeWasEasyBackThen.bank
-  Name: LifeWasEasyBackThen
-  StudioPath: bank:/LifeWasEasyBackThen
-  lastModified: 638128537310674293
+  lastModified: 638128639432695412
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -106,20 +88,22 @@ MonoBehaviour:
   - {fileID: 3097790152859513060}
   - {fileID: -3422353621548409566}
   - {fileID: 2934836833054292942}
-  - {fileID: -167383998433862808}
+  - {fileID: 6404833930266907019}
+  - {fileID: 2831844537358545923}
   EditorEvents:
-  - {fileID: -4993324643231649309}
-  - {fileID: -4831877466666322971}
   - {fileID: 2478752534017609788}
   - {fileID: 270195705787993652}
   - {fileID: 8755019821538864974}
   - {fileID: 5462781737254966337}
+  - {fileID: 7920693871510661280}
+  - {fileID: -8382369361824303267}
+  - {fileID: -4722530072177921909}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3422353621548409566}
   StringsBanks:
   - {fileID: 3097790152859513060}
-  cacheTime: 638128537311236485
+  cacheTime: 638128639433325557
   cacheVersion: 131601
 --- !u!114 &270195705787993652
 MonoBehaviour:
@@ -140,7 +124,7 @@ MonoBehaviour:
     Data3: 1797123483
     Data4: -84939342
   Banks:
-  - {fileID: -167383998433862808}
+  - {fileID: 6404833930266907019}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -171,10 +155,29 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 3998075646350119060}
   MinDistance: 1
   MaxDistance: 20
   Length: 160052
+--- !u!114 &2831844537358545923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Serenity.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Serenity.bank
+  Name: Serenity
+  StudioPath: bank:/Serenity
+  lastModified: 638128639433325557
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2934836833054292942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +193,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638128537311236485
+  lastModified: 638128639433135525
   FileSizes: []
   Exists: 1
 --- !u!114 &3097790152859513060
@@ -208,10 +211,34 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638128537310864334
+  lastModified: 638128639432705416
   FileSizes:
   - Name: 
-    Value: 1124
+    Value: 1244
+  Exists: 1
+--- !u!114 &3998075646350119060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GeneralBackgroundMusic/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1477529686
+    data2: 518220054
+  Type: 1
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &5462781737254966337
 MonoBehaviour:
@@ -235,11 +262,56 @@ MonoBehaviour:
   - {fileID: -3422353621548409566}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6404833930266907019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Nostalgia.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Nostalgia.bank
+  Name: Nostalgia
+  StudioPath: bank:/Nostalgia
+  lastModified: 638128639432515370
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7920693871510661280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Serenity_2
+  m_EditorClassIdentifier: 
+  Path: event:/Serenity_2
+  Guid:
+    Data1: 776506835
+    Data2: 1275162929
+    Data3: 1508502676
+    Data4: 1340719331
+  Banks:
+  - {fileID: 2831844537358545923}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15588
 --- !u!114 &8755019821538864974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +331,7 @@ MonoBehaviour:
     Data3: -791656040
     Data4: -244737079
   Banks:
-  - {fileID: -167383998433862808}
+  - {fileID: 6404833930266907019}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0

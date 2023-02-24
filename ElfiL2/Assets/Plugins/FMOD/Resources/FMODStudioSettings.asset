@@ -442,8 +442,9 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - LifeWasEasyBackThen
   - Music
+  - Nostalgia
+  - Serenity
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

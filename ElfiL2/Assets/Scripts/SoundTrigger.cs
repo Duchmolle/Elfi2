@@ -82,7 +82,7 @@ public class SoundTrigger : MonoBehaviour
                     GetComponent<Collider>().enabled = false;
                     playerIn = false;
                     lvlManager.exitSoundZone();
-
+                    lvlManager.CheckForAreaCompletion(transform.tag);
 
                 }
             }

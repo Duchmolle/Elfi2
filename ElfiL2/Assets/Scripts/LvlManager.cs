@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using TMPro;
 using UnityEditor;
+using FMODUnity;
+using FMOD.Studio;
 
 public class LvlManager : MonoBehaviour
 {
@@ -12,7 +14,20 @@ public class LvlManager : MonoBehaviour
     GameObject[] soundZones;
     public int FoundSound;
     public float LvlCompletion;
-    [SerializeField] TextMeshProUGUI score, text;
+    [SerializeField] TextMeshProUGUI score, text, areaCompleted;
+
+    [SerializeField] private int nostalgiaAreaMax;
+    [SerializeField] private int serenityAreaMax;
+
+    [SerializeField] StudioEventEmitter backgroundMusicInstance;
+    [SerializeField] GameObject linkBetweenSerenityAndNostalgiaGO;
+
+    private int intensityValue;
+    private int nostalgiaAreaCounter;
+    private int serenityAreaCounter;
+    private bool nostalgiaAreaComplete;
+    private bool serenityAreaComplete;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,13 +46,42 @@ public class LvlManager : MonoBehaviour
 
         SRF.SetActive(false);
         score.SetText(FoundSound.ToString() + "/" + soundZones.Length.ToString());
-
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void CheckForAreaCompletion(string tag)
+    {
+        switch(tag)
+        {
+            case "NostalgiaArea":
+                nostalgiaAreaCounter++;
+                if(nostalgiaAreaCounter >= nostalgiaAreaMax)
+                {
+                    intensityValue++;
+                    backgroundMusicInstance.SetParameter("Intensity", intensityValue);
+                    areaCompleted.text = intensityValue + "/4";
+                    nostalgiaAreaComplete = true;
+                }
+                break;
+
+            case "SerenityArea":
+                serenityAreaCounter++;
+                if (serenityAreaCounter >= serenityAreaMax)
+                {
+                    intensityValue++;
+                    backgroundMusicInstance.SetParameter("Intensity", intensityValue);
+                    areaCompleted.text = intensityValue + "/4";
+                    serenityAreaComplete = true;
+                }
+                break;
+        }
+        Debug.Log(intensityValue);
+        linkBetweenSerenityAndNostalgiaGO.SetActive(nostalgiaAreaComplete && serenityAreaComplete);
     }
 
     public void SoundFound()
