@@ -27,6 +27,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 28583
+--- !u!114 &-6992776387106146613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Anger_1
+  m_EditorClassIdentifier: 
+  Path: event:/Anger_1
+  Guid:
+    Data1: 1710642190
+    Data2: 1319531709
+    Data3: 1569219255
+    Data4: 1681078238
+  Banks:
+  - {fileID: -4588333839397907983}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 27215
+--- !u!114 &-5706327260216867518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Anger+LonelinessDone
+  m_EditorClassIdentifier: 
+  Path: event:/Anger+LonelinessDone
+  Guid:
+    Data1: -469540116
+    Data2: 1186389126
+    Data3: -830553962
+    Data4: 1725355699
+  Banks:
+  - {fileID: -4588333839397907983}
+  - {fileID: -1779613492507676066}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4722530072177921909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +109,78 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-4696105599897757822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Loneliness_1
+  m_EditorClassIdentifier: 
+  Path: event:/Loneliness_1
+  Guid:
+    Data1: -320977179
+    Data2: 1077318144
+    Data3: 882660744
+    Data4: 1493439788
+  Banks:
+  - {fileID: -1779613492507676066}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 61578
+--- !u!114 &-4588333839397907983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Anger1.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Anger1.bank
+  Name: Anger1
+  StudioPath: bank:/Anger1
+  lastModified: 638129381898406789
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3598134329261535805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Anger_2
+  m_EditorClassIdentifier: 
+  Path: event:/Anger_2
+  Guid:
+    Data1: 1943551493
+    Data2: 1157188994
+    Data3: 1087697550
+    Data4: 2133508577
+  Banks:
+  - {fileID: -4588333839397907983}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36696
 --- !u!114 &-3422353621548409566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,8 +196,79 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638128639432695412
+  lastModified: 638129381896836438
   FileSizes: []
+  Exists: 1
+--- !u!114 &-1779613492507676066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Loneliness.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Loneliness.bank
+  Name: Loneliness
+  StudioPath: bank:/Loneliness
+  lastModified: 638129381898766905
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1603790364441042127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BellBip
+  m_EditorClassIdentifier: 
+  Path: event:/BellBip
+  Guid:
+    Data1: 729230639
+    Data2: 1195245119
+    Data3: -1995574870
+    Data4: -923666863
+  Banks:
+  - {fileID: -3422353621548409566}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3380
+--- !u!114 &-1568801931970291998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GeneralBackgroundMusic/BeginAngerMusic
+  m_EditorClassIdentifier: 
+  Name: BeginAngerMusic
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3726877663
+    data2: 1874895788
+  Type: 1
+  IsGlobal: 0
+  Labels:
+  - True
+  - False
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -90,6 +288,8 @@ MonoBehaviour:
   - {fileID: 2934836833054292942}
   - {fileID: 6404833930266907019}
   - {fileID: 2831844537358545923}
+  - {fileID: -4588333839397907983}
+  - {fileID: -1779613492507676066}
   EditorEvents:
   - {fileID: 2478752534017609788}
   - {fileID: 270195705787993652}
@@ -98,12 +298,19 @@ MonoBehaviour:
   - {fileID: 7920693871510661280}
   - {fileID: -8382369361824303267}
   - {fileID: -4722530072177921909}
+  - {fileID: 5211625465269344830}
+  - {fileID: -4696105599897757822}
+  - {fileID: 5891946528309416605}
+  - {fileID: -3598134329261535805}
+  - {fileID: -6992776387106146613}
+  - {fileID: -1603790364441042127}
+  - {fileID: -5706327260216867518}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3422353621548409566}
   StringsBanks:
   - {fileID: 3097790152859513060}
-  cacheTime: 638128639433325557
+  cacheTime: 638129381898766905
   cacheVersion: 131601
 --- !u!114 &270195705787993652
 MonoBehaviour:
@@ -157,9 +364,10 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 3998075646350119060}
+  - {fileID: -1568801931970291998}
   MinDistance: 1
   MaxDistance: 20
-  Length: 160052
+  Length: 325198
 --- !u!114 &2831844537358545923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,7 +383,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Serenity.bank
   Name: Serenity
   StudioPath: bank:/Serenity
-  lastModified: 638128639433325557
+  lastModified: 638129381898216743
   FileSizes: []
   Exists: 1
 --- !u!114 &2934836833054292942
@@ -193,7 +401,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638128639433135525
+  lastModified: 638129381897176511
   FileSizes: []
   Exists: 1
 --- !u!114 &3097790152859513060
@@ -211,10 +419,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638128639432705416
+  lastModified: 638129381896846470
   FileSizes:
   - Name: 
-    Value: 1244
+    Value: 1702
   Exists: 1
 --- !u!114 &3998075646350119060
 MonoBehaviour:
@@ -240,6 +448,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5211625465269344830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Serenity+NostalgiaDone
+  m_EditorClassIdentifier: 
+  Path: event:/Serenity+NostalgiaDone
+  Guid:
+    Data1: -1737020603
+    Data2: 1113300128
+    Data3: 584568229
+    Data4: -1227944269
+  Banks:
+  - {fileID: 6404833930266907019}
+  - {fileID: 2831844537358545923}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 6.4
+  MaxDistance: 20
+  Length: 41594
 --- !u!114 &5462781737254966337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +503,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5891946528309416605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Loneliness_2
+  m_EditorClassIdentifier: 
+  Path: event:/Loneliness_2
+  Guid:
+    Data1: 1569657947
+    Data2: 1108564583
+    Data3: 1040789650
+    Data4: 972828019
+  Banks:
+  - {fileID: -1779613492507676066}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 53568
 --- !u!114 &6404833930266907019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +545,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Nostalgia.bank
   Name: Nostalgia
   StudioPath: bank:/Nostalgia
-  lastModified: 638128639432515370
+  lastModified: 638129381897956688
   FileSizes: []
   Exists: 1
 --- !u!114 &7920693871510661280

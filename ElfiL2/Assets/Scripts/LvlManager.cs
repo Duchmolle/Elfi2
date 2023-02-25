@@ -6,6 +6,7 @@ using TMPro;
 using UnityEditor;
 using FMODUnity;
 using FMOD.Studio;
+using Cinemachine;
 
 public class LvlManager : MonoBehaviour
 {
@@ -18,15 +19,25 @@ public class LvlManager : MonoBehaviour
 
     [SerializeField] private int nostalgiaAreaMax;
     [SerializeField] private int serenityAreaMax;
+    [SerializeField] private int lonelinessAreaMax;
+    [SerializeField] private int angerAreaMax;
 
     [SerializeField] StudioEventEmitter backgroundMusicInstance;
+    [SerializeField] StudioEventEmitter bellSEEInstance;
     [SerializeField] GameObject linkBetweenSerenityAndNostalgiaGO;
+    [SerializeField] GameObject beginAngerMusicGO;
+    [SerializeField] GameObject Vcam2;
 
-    private int intensityValue;
+    private int numberOfAreaCompleted;
+    public int intensityValue;
     private int nostalgiaAreaCounter;
     private int serenityAreaCounter;
+    private int lonelinessAreaCounter;
+    private int angerAreaCounter;
     private bool nostalgiaAreaComplete;
     private bool serenityAreaComplete;
+    private bool lonelinessAreaComplete;
+    private bool angerAreaComplete;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +57,7 @@ public class LvlManager : MonoBehaviour
 
         SRF.SetActive(false);
         score.SetText(FoundSound.ToString() + "/" + soundZones.Length.ToString());
+        linkBetweenSerenityAndNostalgiaGO.SetActive(false);
     }
 
     // Update is called once per frame
@@ -63,8 +75,9 @@ public class LvlManager : MonoBehaviour
                 if(nostalgiaAreaCounter >= nostalgiaAreaMax)
                 {
                     intensityValue++;
+                    numberOfAreaCompleted++;
                     backgroundMusicInstance.SetParameter("Intensity", intensityValue);
-                    areaCompleted.text = intensityValue + "/4";
+                    areaCompleted.text = numberOfAreaCompleted + "/4";
                     nostalgiaAreaComplete = true;
                 }
                 break;
@@ -74,14 +87,40 @@ public class LvlManager : MonoBehaviour
                 if (serenityAreaCounter >= serenityAreaMax)
                 {
                     intensityValue++;
+                    numberOfAreaCompleted++;
                     backgroundMusicInstance.SetParameter("Intensity", intensityValue);
-                    areaCompleted.text = intensityValue + "/4";
+                    areaCompleted.text = numberOfAreaCompleted + "/4";
                     serenityAreaComplete = true;
+                }
+                break;
+
+            case "LonelinessArea":
+                lonelinessAreaCounter++;
+                if (lonelinessAreaCounter >= lonelinessAreaMax)
+                {
+                    intensityValue++;
+                    numberOfAreaCompleted++;
+                    backgroundMusicInstance.SetParameter("Intensity", intensityValue);
+                    areaCompleted.text = numberOfAreaCompleted + "/4";
+                    lonelinessAreaComplete = true;
+                }
+                break;
+            
+            case "AngerArea":
+                angerAreaCounter++;
+                if (angerAreaCounter >= angerAreaMax)
+                {
+                    intensityValue++;
+                    numberOfAreaCompleted++;
+                    backgroundMusicInstance.SetParameter("Intensity", intensityValue);
+                    areaCompleted.text = numberOfAreaCompleted + "/4";
+                    angerAreaComplete = true;
                 }
                 break;
         }
         Debug.Log(intensityValue);
         linkBetweenSerenityAndNostalgiaGO.SetActive(nostalgiaAreaComplete && serenityAreaComplete);
+        beginAngerMusicGO.SetActive(nostalgiaAreaComplete && serenityAreaComplete);
     }
 
     public void SoundFound()
@@ -93,12 +132,15 @@ public class LvlManager : MonoBehaviour
 
     public void LvlFinished()
     {
-        foreach(GameObject _soundZone in soundZones)
+        bellSEEInstance.Play();
+        foreach (GameObject _soundZone in soundZones)
         {
-            _soundZone.SetActive(false);
+            //_soundZone.SetActive(false);
+            _soundZone.GetComponent<StudioEventEmitter>().Stop();
         }
         SRF.SetActive(true);
         BellPS.gameObject.SetActive(true);
+        Vcam2.SetActive(true);
     }
 
     public void enterSoundZone(int Cases)

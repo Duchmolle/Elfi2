@@ -442,6 +442,8 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Anger1
+  - Loneliness
   - Music
   - Nostalgia
   - Serenity
