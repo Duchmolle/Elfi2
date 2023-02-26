@@ -27,6 +27,7 @@ public class LvlManager : MonoBehaviour
     [SerializeField] GameObject linkBetweenSerenityAndNostalgiaGO;
     [SerializeField] GameObject beginAngerMusicGO;
     [SerializeField] GameObject Vcam2;
+    [SerializeField] GameObject quitButton;
 
     private int numberOfAreaCompleted;
     public int intensityValue;
@@ -39,10 +40,17 @@ public class LvlManager : MonoBehaviour
     private bool lonelinessAreaComplete;
     private bool angerAreaComplete;
 
+    private void Awake()
+    {
+
+        Vcam2.SetActive(false);
+        quitButton.SetActive(false);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        PlayStateChange.SRF = SRF;
+        //PlayStateChange.SRF = SRF;
         List<GameObject> childObjects = new List<GameObject>();
         foreach (Transform child in GetComponentsInChildren<Transform>( ))
         {
@@ -141,6 +149,8 @@ public class LvlManager : MonoBehaviour
         SRF.SetActive(true);
         BellPS.gameObject.SetActive(true);
         Vcam2.SetActive(true);
+        quitButton.SetActive(true);
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void enterSoundZone(int Cases)
@@ -162,7 +172,19 @@ public class LvlManager : MonoBehaviour
     {
         text.SetText("");
     }
+
+    public void OC_Restart()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+
+    public void OC_Quit()
+    {
+        Application.Quit();
+    }
 }
+
+#if UNITY_EDITOR
 
 [InitializeOnLoad]
 static public class PlayStateChange
@@ -182,3 +204,5 @@ static public class PlayStateChange
         }
     }
 }
+
+#endif

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMOD;
 using FMODUnity;
+using FMOD.Studio;
 
 public class SoundTrigger : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class SoundTrigger : MonoBehaviour
     [SerializeField] float soundWaveRadius;
     [SerializeField] string eventToPlayAfterActivation;
 
+    FMOD.Studio.EventInstance eventInstance;
+
     private void Start()
     {
         var main = GetComponentInChildren<ParticleSystem>(true).main;
@@ -21,6 +24,8 @@ public class SoundTrigger : MonoBehaviour
             main.startSize = soundWaveRadius;
 
         }
+
+        eventInstance = FMODUnity.RuntimeManager.CreateInstance(eventToPlayAfterActivation);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -62,7 +67,6 @@ public class SoundTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 GetComponent<StudioEventEmitter>().Stop();
-                FMOD.Studio.EventInstance eventInstance = FMODUnity.RuntimeManager.CreateInstance(EventReference.Find(eventToPlayAfterActivation));
                 RuntimeManager.AttachInstanceToGameObject(eventInstance, transform);
                 eventInstance.start();
 
