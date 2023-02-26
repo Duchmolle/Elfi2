@@ -9,7 +9,7 @@ public class Charcon : MonoBehaviour
     Transform tr;
     Rigidbody rb;
     Vector3 groundPosition, groundNormal, movement, gravity;
-    bool grounded = false, onStep = false;
+    public bool grounded = false, onStep = false;
     [SerializeField] float maxSpeed, acc, gravCoef;
     float speed;
     [SerializeField]ParticleSystem pS;

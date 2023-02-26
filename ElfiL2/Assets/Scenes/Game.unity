@@ -15353,6 +15353,7 @@ GameObject:
   - component: {fileID: 196750565}
   - component: {fileID: 196750566}
   - component: {fileID: 196750567}
+  - component: {fileID: 196750568}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -15417,10 +15418,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a6189f3f0421541b056b13732b0070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grounded: 0
+  onStep: 0
   maxSpeed: 250
   acc: 15
   gravCoef: 50
   pS: {fileID: 1055093614}
+--- !u!114 &196750568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196750563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c976306383df9a345a5f664ed15ab974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepSpeed: 0.7
+  currentTerrain: 0
 --- !u!1 &245079171
 GameObject:
   m_ObjectHideFlags: 0
@@ -15566,7 +15583,7 @@ GameObject:
   - component: {fileID: 280526284}
   - component: {fileID: 280526287}
   - component: {fileID: 280526286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15653,7 +15670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &304328428
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15674,13 +15691,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304328427}
-  m_LocalRotation: {x: -0.00045603886, y: -0.99566716, z: 0.092865, w: -0.004780829}
-  m_LocalPosition: {x: 13.785399, y: 6.0340643, z: 1.7443199}
+  m_LocalRotation: {x: -0.0010646179, y: -0.9999883, z: -0.000005026136, w: -0.004721015}
+  m_LocalPosition: {x: 13.332, y: 5.461546, z: -1.548}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: -36.461, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180.541, z: 0.122}
 --- !u!114 &304328430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15706,7 +15723,7 @@ GameObject:
   - component: {fileID: 363009088}
   - component: {fileID: 363009087}
   - component: {fileID: 363009086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16065,7 +16082,7 @@ GameObject:
   - component: {fileID: 448835041}
   - component: {fileID: 448835040}
   - component: {fileID: 448835039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26677,7 +26694,7 @@ GameObject:
   - component: {fileID: 763038529}
   - component: {fileID: 763038532}
   - component: {fileID: 763038531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26920,7 +26937,7 @@ GameObject:
   - component: {fileID: 787157376}
   - component: {fileID: 787157375}
   - component: {fileID: 787157374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33098,7 +33115,7 @@ GameObject:
   - component: {fileID: 1219909961}
   - component: {fileID: 1219909960}
   - component: {fileID: 1219909959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43026,7 +43043,7 @@ GameObject:
   - component: {fileID: 1318490529}
   - component: {fileID: 1318490532}
   - component: {fileID: 1318490531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43121,7 +43138,7 @@ GameObject:
   - component: {fileID: 1350725337}
   - component: {fileID: 1350725336}
   - component: {fileID: 1350725335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43202,7 +43219,7 @@ GameObject:
   - component: {fileID: 1384713456}
   - component: {fileID: 1384713459}
   - component: {fileID: 1384713458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43378,7 +43395,7 @@ GameObject:
   - component: {fileID: 1427266310}
   - component: {fileID: 1427266313}
   - component: {fileID: 1427266312}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43459,7 +43476,7 @@ GameObject:
   - component: {fileID: 1447653619}
   - component: {fileID: 1447653618}
   - component: {fileID: 1447653617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43540,7 +43557,7 @@ GameObject:
   - component: {fileID: 1462185634}
   - component: {fileID: 1462185637}
   - component: {fileID: 1462185636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43621,7 +43638,7 @@ GameObject:
   - component: {fileID: 1481050341}
   - component: {fileID: 1481050344}
   - component: {fileID: 1481050343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43702,7 +43719,7 @@ GameObject:
   - component: {fileID: 1506426899}
   - component: {fileID: 1506426898}
   - component: {fileID: 1506426897}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48735,7 +48752,7 @@ GameObject:
   - component: {fileID: 1572400441}
   - component: {fileID: 1572400440}
   - component: {fileID: 1572400439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49148,7 +49165,7 @@ GameObject:
   - component: {fileID: 1643727545}
   - component: {fileID: 1643727544}
   - component: {fileID: 1643727543}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59718,7 +59735,7 @@ GameObject:
   - component: {fileID: 1942860573}
   - component: {fileID: 1942860572}
   - component: {fileID: 1942860571}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60418,7 +60435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115028776}
   - component: {fileID: 2115028777}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60572,7 +60589,7 @@ GameObject:
   - component: {fileID: 2943081937674777803}
   - component: {fileID: 2786534776991695955}
   - component: {fileID: 1335855689}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GapeCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60687,7 +60704,7 @@ GameObject:
   - component: {fileID: 8274470406929622163}
   - component: {fileID: 5573531430924708470}
   - component: {fileID: 1780803052}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60738,7 +60755,7 @@ GameObject:
   - component: {fileID: 3745622626905921898}
   - component: {fileID: 5334037118957776884}
   - component: {fileID: 4539702728756409131}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StairPillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60917,7 +60934,7 @@ GameObject:
   - component: {fileID: 4865064391974523915}
   - component: {fileID: 8897240365639318878}
   - component: {fileID: 3129779575207789986}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pontoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61140,7 +61157,7 @@ GameObject:
   - component: {fileID: 2860862316225214983}
   - component: {fileID: 2648511432162721485}
   - component: {fileID: 6977748263497877287}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Crenel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61283,7 +61300,7 @@ GameObject:
   - component: {fileID: 1780803058}
   - component: {fileID: 1780803078}
   - component: {fileID: 1780803079}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InvisibleWallCol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61568,7 +61585,7 @@ GameObject:
   - component: {fileID: 1729776007660685498}
   - component: {fileID: 6697621764341691830}
   - component: {fileID: 882129738299685537}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61587,7 +61604,7 @@ GameObject:
   - component: {fileID: 3631933211976550294}
   - component: {fileID: 8442510506869398171}
   - component: {fileID: 668094777}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61622,7 +61639,7 @@ GameObject:
   - component: {fileID: 8373555443151934577}
   - component: {fileID: 7400049673147121738}
   - component: {fileID: 1780803056}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Beach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61639,7 +61656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2633456699972435933}
   - component: {fileID: 1393542470}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HighColl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61712,7 +61729,7 @@ GameObject:
   - component: {fileID: 4930808674595636161}
   - component: {fileID: 623110453000627501}
   - component: {fileID: 391609611942386970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Crenel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61731,7 +61748,7 @@ GameObject:
   - component: {fileID: 9105937449051929018}
   - component: {fileID: 4773068484942506228}
   - component: {fileID: 1780803054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plazza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61844,7 +61861,7 @@ GameObject:
   - component: {fileID: 449430990551969420}
   - component: {fileID: 8751516054473091087}
   - component: {fileID: 1845659267822309508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HiderPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62121,7 +62138,7 @@ GameObject:
   - component: {fileID: 1070658779116018868}
   - component: {fileID: 3695666859490226813}
   - component: {fileID: 1780803053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LittleStairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62194,7 +62211,7 @@ GameObject:
   - component: {fileID: 8857944162305480771}
   - component: {fileID: 7236462064629389266}
   - component: {fileID: 974584544074691987}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DoorArches
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62241,7 +62258,7 @@ GameObject:
   - component: {fileID: 3861530873912955970}
   - component: {fileID: 455238732321094687}
   - component: {fileID: 1780803055}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62259,7 +62276,7 @@ GameObject:
   - component: {fileID: 7981798411497507650}
   - component: {fileID: 4692395915026166853}
   - component: {fileID: 4687627978510037272}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62401,7 +62418,7 @@ GameObject:
   - component: {fileID: 6738450968750896949}
   - component: {fileID: 4109396431111566837}
   - component: {fileID: 7071182761659600222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62461,7 +62478,7 @@ GameObject:
   - component: {fileID: 3260616446792261220}
   - component: {fileID: 7762067043929212917}
   - component: {fileID: 1780803051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ramp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62488,7 +62505,7 @@ GameObject:
   - component: {fileID: 8894691111157979878}
   - component: {fileID: 6745302441053299243}
   - component: {fileID: 609095004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}

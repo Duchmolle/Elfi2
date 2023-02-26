@@ -54,34 +54,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 27215
---- !u!114 &-5706327260216867518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Anger+LonelinessDone
-  m_EditorClassIdentifier: 
-  Path: event:/Anger+LonelinessDone
-  Guid:
-    Data1: -469540116
-    Data2: 1186389126
-    Data3: -830553962
-    Data4: 1725355699
-  Banks:
-  - {fileID: -4588333839397907983}
-  - {fileID: -1779613492507676066}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-4722530072177921909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +123,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Anger1.bank
   Name: Anger1
   StudioPath: bank:/Anger1
-  lastModified: 638129381898406789
+  lastModified: 638130369008958711
   FileSizes: []
   Exists: 1
 --- !u!114 &-3598134329261535805
@@ -196,9 +168,37 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638129381896836438
+  lastModified: 638130369009588861
   FileSizes: []
   Exists: 1
+--- !u!114 &-2820213747759712509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps
+  Guid:
+    Data1: 1490175749
+    Data2: 1110753025
+    Data3: 601755054
+    Data4: -382528452
+  Banks:
+  - {fileID: -3422353621548409566}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1537525172893773822}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1779613492507676066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Loneliness.bank
   Name: Loneliness
   StudioPath: bank:/Loneliness
-  lastModified: 638129381898766905
+  lastModified: 638130369009328793
   FileSizes: []
   Exists: 1
 --- !u!114 &-1603790364441042127
@@ -294,7 +294,6 @@ MonoBehaviour:
   - {fileID: 2478752534017609788}
   - {fileID: 270195705787993652}
   - {fileID: 8755019821538864974}
-  - {fileID: 5462781737254966337}
   - {fileID: 7920693871510661280}
   - {fileID: -8382369361824303267}
   - {fileID: -4722530072177921909}
@@ -304,13 +303,13 @@ MonoBehaviour:
   - {fileID: -3598134329261535805}
   - {fileID: -6992776387106146613}
   - {fileID: -1603790364441042127}
-  - {fileID: -5706327260216867518}
+  - {fileID: -2820213747759712509}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3422353621548409566}
   StringsBanks:
   - {fileID: 3097790152859513060}
-  cacheTime: 638129381898766905
+  cacheTime: 638130369011011748
   cacheVersion: 131601
 --- !u!114 &270195705787993652
 MonoBehaviour:
@@ -339,6 +338,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 78155
+--- !u!114 &1537525172893773822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Terrain
+  m_EditorClassIdentifier: 
+  Name: Terrain
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 757643569
+    data2: 728368034
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Wood
+  - Sand
+  - Rock
+  Exists: 1
 --- !u!114 &2478752534017609788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,7 +409,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Serenity.bank
   Name: Serenity
   StudioPath: bank:/Serenity
-  lastModified: 638129381898216743
+  lastModified: 638130369011011748
   FileSizes: []
   Exists: 1
 --- !u!114 &2934836833054292942
@@ -401,7 +427,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638129381897176511
+  lastModified: 638130369009938948
   FileSizes: []
   Exists: 1
 --- !u!114 &3097790152859513060
@@ -419,10 +445,10 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638129381896846470
+  lastModified: 638130369009608870
   FileSizes:
   - Name: 
-    Value: 1702
+    Value: 1670
   Exists: 1
 --- !u!114 &3998075646350119060
 MonoBehaviour:
@@ -476,33 +502,6 @@ MonoBehaviour:
   MinDistance: 6.4
   MaxDistance: 20
   Length: 41594
---- !u!114 &5462781737254966337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/NavigationBip
-  m_EditorClassIdentifier: 
-  Path: event:/NavigationBip
-  Guid:
-    Data1: 729075193
-    Data2: 1300762703
-    Data3: -143616833
-    Data4: 693081750
-  Banks:
-  - {fileID: -3422353621548409566}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &5891946528309416605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,7 +544,7 @@ MonoBehaviour:
   Path: ../../../FMOD/Elfi2/ELFI2/Build/Desktop/Nostalgia.bank
   Name: Nostalgia
   StudioPath: bank:/Nostalgia
-  lastModified: 638129381897956688
+  lastModified: 638130369010741696
   FileSizes: []
   Exists: 1
 --- !u!114 &7920693871510661280
